@@ -32,6 +32,8 @@ where length(Professor_Name) !=3;
 --2000 년 이후 출생자는 없으며 출력 헤더는 "교수이름", "나이"로 한다. 나이는 ‘만’으로 계산한다.)
 desc tb_professor;
 
+
+만나이로 바꿔야함.
 select PROFESSOR_NAME 교수이름,
          extract(year from sysdate)-((substr(PROFESSOR_SSN,1,2))+1901) 나이
          
